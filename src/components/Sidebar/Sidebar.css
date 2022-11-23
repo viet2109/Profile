@@ -1,0 +1,23 @@
+.menu-item {
+    -webkit-text-stroke: 2px white;
+    font-family: 'Poppins', sans-serif;
+    counter-increment: section;
+    font-weight: 700;
+    border-bottom: 1px solid #999;
+    color: var(--bg-color);
+}
+
+.menu-item:hover {
+    color: var(--primary-color);
+    -webkit-text-stroke: 2px;
+}
+
+.menu-item span {
+    position: relative;
+}
+
+.menu-item span::before {
+
+    content: counter(section, decimal-leading-zero) '.';
+    color: var(--primary-color);
+}

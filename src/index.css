@@ -1,13 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-family: 'Radio Canada', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    /* overflow: hidden; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --primary-color: rgb(89 206 143);
+    --bg-color: rgb(1 14 34);
+    --black: rgb(0, 0, 0)
+}
+
+@layer utilities {
+    .textvertical {
+        writing-mode: vertical-rl;
+    }
+
+    .margin-center {
+        margin: 0 auto;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    .bg1 {
+        background-image: url('../public/images/herosection-bg.png');
+    }
+}
+
+@layer components {
+    .absolute-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--black);
+    background: var(--primary-color);
+}
+
+::selection {
+    color: var(--black);
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #383838;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6b6b6b;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #383838;
 }
