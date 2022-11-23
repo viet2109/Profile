@@ -1,7 +1,6 @@
 import React from 'react'
 import ContactCard from '../components/ContactCard'
 import Content from '../components/Content'
-import Title from '../components/Title'
 import { BsTelephone } from "react-icons/bs"
 import { AiOutlineMail } from 'react-icons/ai'
 import { MdOutlineLocationOn } from 'react-icons/md'
