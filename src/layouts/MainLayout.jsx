@@ -3,9 +3,9 @@ import Sidebar from '../components/Sidebar/Sidebar'
 
 export default function MainLayout({ children }) {
     return (
-        <div className='relative w-full'>
+        <div className=' w-full relative'>
             <Sidebar />
-            <div className="left-sidebar-w absolute w-menu-w">
+            <div className="md:left-sidebar-w md:w-menu-w left-0 w-full">
                 {children}
             </div>
         </div>

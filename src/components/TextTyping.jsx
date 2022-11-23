@@ -51,7 +51,7 @@ export default function TextTyping() {
         typingText()
     }, [])
     return (
-        <h1 className="typing-text text-center text-4xl md:text-5xl leading-10 md:leading-[56px] font-bold px-5 my-10 md:my-5 fade-in duration-500">
+        <h1 className="typing-text text-center text-3xl md:text-5xl leading-10 md:leading-[56px] font-bold px-5 my-10 md:my-5 fade-in duration-500">
             Hi, I am &nbsp;
             <br className="block md:hidden" />
             <span className="text-primary typetext"></span>

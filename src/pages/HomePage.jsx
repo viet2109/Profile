@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { FacbookIcon, GithubIcon, InstagramIcon, LinkedinIcon } from '../components/icons'
 import TextTyping from '../components/TextTyping'
 import bg from '../assets/images/herosection-bg.png'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 export default function HomePage() {
     const socialList = [
         {
@@ -35,7 +36,7 @@ export default function HomePage() {
     return (
         <div className='w-screen h-screen  relative bg-section' style={{ backgroundImage: `url(${bg})` }}>
             {/* <img src="/images/avatar.jpg" alt="" className='w-full h-full object-cover opacity-20 absolute ' /> */}
-            <div className="absolute absolute-center text-center flex flex-col justify-center">
+            <div className="absolute absolute-center text-center flex flex-col justify-center w-full px-4">
                 <div className="w-[150px] h-[150px] margin-center relative fade-in duration-500">
                     <div className=" w-full  h-full rounded-full bg-red-400 relative bg-gradient-to-t from-primary to-black animate-rotate"></div>
                     <img src="/images/avatar.jpg" alt="" className='w-[140px] h-[140px] rounded-full absolute top-[5px] left-[5px]' />
@@ -70,6 +71,8 @@ export default function HomePage() {
                     ))}
                 </ul>
             </div>
+
+            {/*  */}
         </div>
     )
 }

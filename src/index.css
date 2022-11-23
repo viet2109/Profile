@@ -8,6 +8,7 @@ body {
     font-family: 'Jost', sans-serif;
     color: black;
     overflow-x: hidden;
+    overflow-y: auto;
     /* overflow: hidden; */
 }
 
