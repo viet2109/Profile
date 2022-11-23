@@ -33,8 +33,8 @@ export default function HomePage() {
         }
     }, [])
     return (
-        <div className='w-screen h-screen  relative bg-section'>
-            <img src="/images/avatar.jpg" alt="" className='w-full h-full object-cover opacity-20 absolute ' />
+        <div className='w-screen h-screen  relative bg-section' style={{ backgroundImage: `url(${bg})` }}>
+            {/* <img src="/images/avatar.jpg" alt="" className='w-full h-full object-cover opacity-20 absolute ' /> */}
             <div className="absolute absolute-center text-center flex flex-col justify-center">
                 <div className="w-[150px] h-[150px] margin-center relative fade-in duration-500">
                     <div className=" w-full  h-full rounded-full bg-red-400 relative bg-gradient-to-t from-primary to-black animate-rotate"></div>
@@ -49,7 +49,7 @@ export default function HomePage() {
                 <ul className="inline-flex flex-wrap gap-4 margin-center transition-all duration-500 fade-in">
                     {socialList.map((item) => (
                         <li
-                            className="social-item group align-middle w-10 h-10 inline-block border border-blur cursor-pointer relative overflow-hidden rounded"
+                            className="social-item group align-middle w-10 h-10 inline-block border border-blur cursor-pointer relative overflow-hidden rounded border-black"
                             key={item.id}
                         >
                             <a href={item.href} target="blank">

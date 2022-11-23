@@ -42,7 +42,7 @@ export default function Sidebar() {
                     </p>
                 </div>
             </div>
-            <div ref={menuRef} className="absolute w-menu-w h-full bg-side-bar top-[calc(-100vh)] z-[9999999] left-[80px] flex flex-col duration-500">
+            <div ref={menuRef} className="absolute w-menu-w h-full bg-section top-[calc(-100vh)] z-[9999999] left-[80px] flex flex-col duration-500">
                 {listMenu.map((item) => (
                     <Link to={item.href} onClick={handleClickMenuItem} key={item.id} className={`menu-item text-lg md:text-6xl uppercase font-bold  h-full w-full flex basis-1/5 items-center justify-center md:border-l border-blur md:hover:basis-2/5   hover:text-primary transition-all duration-500 cursor-pointer`}>
                         <span className='menu-title'>{item.label}</span>

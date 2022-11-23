@@ -71,11 +71,11 @@ export default function ResumePage() {
                 <div className="grid grid-cols-4 gap-x-5 gap-y-10 pt-10">
                     {
                         skills.map((e, i) => (
-                            <div className="col-span-1 text-white hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110" key={i}>
+                            <div className="col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110" key={i}>
                                 <div className="text-8xl">
                                     {e.icon}
                                 </div>
-                                <p className="name pt-3 text-lg font-semibold">{e.name}</p>
+                                <p className="name pt-3  text-lg font-semibold">{e.name}</p>
                             </div>
                         ))
                     }
@@ -86,14 +86,14 @@ export default function ResumePage() {
                     <div className=" col-span-1">
                         <h4 className="title flex items-center text-primary text-xl font-semibold mb-3">
                             <BookIcon />
-                            <span className="ml-2 text-white">Educational Qualification</span>
+                            <span className="ml-2 text-black">Educational Qualification</span>
                         </h4>
                         <Timeline timeLineList={educationTimeline} />
                     </div>
                     <div className="col-span-1">
                         <h4 className="title flex items-center text-primary text-xl font-semibold mb-3">
                             <BagIcon />
-                            <span className="ml-2 text-white">Working Experience</span>
+                            <span className="ml-2 text-black">Working Experience</span>
                         </h4>
                         <Timeline timeLineList={workingTimeline} />
                     </div>
