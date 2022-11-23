@@ -29,8 +29,8 @@ function Contact() {
     ]
     return (
         <Content title='contact us' titleBg='contact'>
-            <div className="p-4 flex gap-10">
-                <div className="w-[40%]  pt-20">
+            <div className="p-4 flex gap-10 flex-wrap">
+                <div className="w-[40%]  pt-20 flex-1">
                     <h4 className='mb-4 font-extrabold text-xl'>Contact Information</h4>
                     <p className='mb-3 text-base'>Hi, you can easily contact me through the following ways:</p>
                     <span class="w-20 h-1 inline-block bg-primary bg-opacity-20 rounded-full my-4"></span>
@@ -40,7 +40,7 @@ function Contact() {
                         ))
                     }
                 </div>
-                <div className="w-[60%]">
+                <div className="md:w-[60%] w-full">
                     <Form />
                 </div>
             </div>

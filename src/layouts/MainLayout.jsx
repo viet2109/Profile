@@ -5,7 +5,7 @@ export default function MainLayout({ children }) {
     return (
         <div className=' w-full relative'>
             <Sidebar />
-            <div className="md:left-sidebar-w md:w-menu-w left-0 w-full">
+            <div className="md:left-sidebar-w md:relative md:w-menu-w left-0 w-full">
                 {children}
             </div>
         </div>

@@ -42,7 +42,7 @@ export default function Sidebar() {
                     </Link>
                 ))}
             </div>
-            {/* <div className="top-0 h-full z-50 md:fixed bg-white">
+            <div className="top-0 h-full z-50 md:fixed bg-white">
 
                 <div className=' w-20 h-full md:flex flex-col justify-around items-center border-r hidden'>
                     <div className="h-[40%]">
@@ -61,10 +61,10 @@ export default function Sidebar() {
                     </div>
                 </div>
 
-                
 
 
-            </div> */}
+
+            </div>
 
         </>
     )
