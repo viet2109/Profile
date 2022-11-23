@@ -16,7 +16,7 @@ export default function WorksPage() {
     ]
     return (
         <Content title='my works' titleBg='works'>
-            <div className="grid grid-cols-2 gap-10 p-10 pb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-20">
                 {
                     projects.map(e => (
                         <div className="rounded-md flex flex-col bg-white p-5 group" key={e.id} >

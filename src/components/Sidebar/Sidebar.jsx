@@ -29,8 +29,18 @@ export default function Sidebar() {
     return (
         <>
             {/* navbar mobile */}
-            <div className="fixed top-1/2 -translate-y-1/2 w-10 h-10 bg-primary flex items-center justify-center bg-opacity-20 md:hidden z-[99]">
+            <div className="fixed top-1/2 -translate-y-1/2 w-10 h-10 bg-primary flex items-center justify-center bg-opacity-20 md:hidden z-[999]">
                 <AiOutlineArrowRight size={30} onClick={handleClickMenu} />
+            </div>
+            <div ref={menuRef} className="w-screen fixed md:w-menu-w h-screen bg-section top-[calc(-100vh)] z-[9999999] md:left-[80px] flex flex-col duration-500">
+                <div className='absolute right-4 top-4 bg-primary rounded-full p-1 bg-opacity-20 text-primary' onClick={handleClickMenu}>
+                    <IoCloseSharp size={30} />
+                </div>
+                {listMenu.map((item) => (
+                    <Link to={item.href} onClick={handleClickMenuItem} key={item.id} className={`menu-item text-lg md:text-6xl uppercase font-bold  h-full w-full flex basis-1/5 items-center justify-center md:border-l border-blur md:hover:basis-2/5   hover:text-primary transition-all duration-500 cursor-pointer`}>
+                        <span className='menu-title'>{item.label}</span>
+                    </Link>
+                ))}
             </div>
             {/* <div className="top-0 h-full z-50 md:fixed bg-white">
 
@@ -51,16 +61,7 @@ export default function Sidebar() {
                     </div>
                 </div>
 
-                <div ref={menuRef} className="w-screen absolute md:w-menu-w h-screen bg-section top-[calc(-100vh)] z-[9999999] md:left-[80px] flex flex-col duration-500">
-                    <div className='absolute right-4 top-4 bg-primary rounded-full p-1 bg-opacity-20 text-primary' onClick={handleClickMenu}>
-                        <IoCloseSharp size={30} />
-                    </div>
-                    {listMenu.map((item) => (
-                        <Link to={item.href} onClick={handleClickMenuItem} key={item.id} className={`menu-item text-lg md:text-6xl uppercase font-bold  h-full w-full flex basis-1/5 items-center justify-center md:border-l border-blur md:hover:basis-2/5   hover:text-primary transition-all duration-500 cursor-pointer`}>
-                            <span className='menu-title'>{item.label}</span>
-                        </Link>
-                    ))}
-                </div>
+                
 
 
             </div> */}

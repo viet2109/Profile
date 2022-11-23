@@ -68,7 +68,7 @@ export default function ResumePage() {
     return (
         <div className=''>
             <Content title='my skills' titleBg='skills'>
-                <div className="grid grid-cols-4 gap-x-5 gap-y-10 pt-10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-10 pt-10">
                     {
                         skills.map((e, i) => (
                             <div className="col-span-1 hover:text-primary flex flex-col items-center transition duration-200 hover:scale-110" key={i}>

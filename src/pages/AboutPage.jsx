@@ -37,11 +37,11 @@ export default function AboutPage() {
     return (
         <div className='w-full min-h-screen relative'>
             <Content title='about me' titleBg='about'>
-                <div className="flex w-full px-20">
-                    <div className="flex-1 bg-primary h-96 flex justify-center items-center rounded-lg bg-opacity-20">
+                <div className="flex w-full md:px-20 px-4 flex-wrap">
+                    <div className=" w-full md:flex-1 bg-primary h-96 flex justify-center items-center rounded-lg bg-opacity-20">
                         <img src="/images/giphy.gif" alt="" className='w-[96%] object-cover h-[364px]' />
                     </div>
-                    <div className="flex-1 ml-10 pt-4">
+                    <div className="md:flex-1 md:ml-10 pt-4 ">
                         <h2 className='font-bold text-2xl'>Hi, I am<span className='text-primary ml-2'>Vu Nguyen</span></h2>
                         <ul className='pl-5 text-lg font-semibold text-gray-500 my-2'>
                             {
