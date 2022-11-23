@@ -26,7 +26,7 @@ export default function Sidebar() {
     }
     return (
         <div className="top-0 h-full z-50 fixed bg-white">
-            <div className='w-20 h-full bg-side-bar flex flex-col justify-around items-center border-r'>
+            <div className='w-20 h-full flex flex-col justify-around items-center border-r'>
                 <div className="h-[40%]">
                     <div className="w-[60px] h-[60px] rounded-full bg-primary relative " onClick={handleClickAvatar}>
                         <img src="/images/avatar.jpg" alt="" className='w-[54px] h-[54px] rounded-full absolute top-[3px] left-[3px]' />
