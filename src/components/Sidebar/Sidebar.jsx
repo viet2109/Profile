@@ -25,7 +25,7 @@ export default function Sidebar() {
         navigate("/")
     }
     return (
-        <div className="top-0 h-full z-50 fixed ">
+        <div className="top-0 h-full z-50 fixed bg-white">
             <div className='w-20 h-full bg-side-bar flex flex-col justify-around items-center border-r'>
                 <div className="h-[40%]">
                     <div className="w-[60px] h-[60px] rounded-full bg-primary relative " onClick={handleClickAvatar}>
@@ -33,7 +33,7 @@ export default function Sidebar() {
                     </div>
                 </div>
                 <div className="" onClick={handleClickMenu}>
-                    <MenuIcon className='text-white text-4xl' />
+                    <MenuIcon className=' text-4xl' />
                 </div>
                 <div className="h-[40%] w-full flex justify-center items-end">
                     <p className='rotate-[180deg] textvertical'>

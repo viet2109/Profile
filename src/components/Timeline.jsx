@@ -14,7 +14,7 @@ export default function Timeline({ timeLineList }) {
                         </span>
                     </div>
                     <div className="timeline-main flex-1 pt-6 pl-12 border-l-4 border-white border-opacity-20 relative">
-                        <div className=" absolute w-6 h-6 rounded-full border-4 border-white border-opacity-20 top-6 left-0 translate-x-[calc(-50%-2px)] transform bg-dark-50 z-10 flex justify-center items-center bg-bg">
+                        <div className=" absolute w-6 h-6 rounded-full border-4 border-white border-opacity-20 top-6 left-0 translate-x-[calc(-50%-2px)] transform z-10 flex justify-center items-center bg-section">
                             <div className="w-2 h-2 bg-primary shadow-md shadow-primary rounded-full hidden group-hover:block transition"></div>
                         </div>
                         <div className=" absolute w-20 h-1 bg-white bg-opacity-20 top-6 left-0 transform -translate-x-1/2 translate-y-[calc(0.75rem-2px)]"></div>

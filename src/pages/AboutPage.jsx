@@ -35,7 +35,7 @@ export default function AboutPage() {
 
     ]
     return (
-        <div className='w-full min-h-screen relative bg-gray-900'>
+        <div className='w-full min-h-screen relative'>
             <Content title='about me' titleBg='about'>
                 <div className="flex w-full px-20">
                     <div className="flex-1 bg-primary h-96 flex justify-center items-center rounded-lg bg-opacity-20">

@@ -5,14 +5,14 @@
 body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    font-family: 'Radio Canada', sans-serif;
-    color: white;
+    font-family: 'Jost', sans-serif;
+    color: black;
     overflow-x: hidden;
     /* overflow: hidden; */
 }
 
 :root {
-    --primary-color: rgb(89 206 143);
+    --primary-color: #29a587;
     --bg-color: rgb(1 14 34);
     --black: rgb(0, 0, 0)
 }

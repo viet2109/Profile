@@ -7,11 +7,13 @@ module.exports = {
     extend: {
       colors: {
         'side-bar': 'rgb(7 14 31)',
-        'primary': 'rgb(89 206 143)',
-        'bg': 'rgb(1 14 34)'
+        'primary': '#29a587',
+        'bg': 'rgb(1 14 34)',
+        'section': '#f0ebe3'
       },
       backgroundImage: {
-        'hero1-bg': "url('/images/herosection-bg.png')",
+        'bg1': "url('/images/avatar.jpg')",
+        'bg2': "url('/images/herosection-bg.png')",
       },
       animation: {
         rotate: 'rotate 1s linear infinite',

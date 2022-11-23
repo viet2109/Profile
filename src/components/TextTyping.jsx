@@ -23,7 +23,7 @@ export default function TextTyping() {
                             setTimeout(function () {
                                 typeText.classList.remove('showText')
                                 typingText()
-                            }, 1000)
+                            }, 900)
                             return
                         } else {
                             // increment index by 1

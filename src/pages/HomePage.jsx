@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { FacbookIcon, GithubIcon, InstagramIcon, LinkedinIcon } from '../components/icons'
 import TextTyping from '../components/TextTyping'
+import bg from '../assets/images/herosection-bg.png'
 export default function HomePage() {
     const socialList = [
         {
@@ -32,7 +33,7 @@ export default function HomePage() {
         }
     }, [])
     return (
-        <div className='w-screen h-screen  relative bg-bg'>
+        <div className='w-screen h-screen  relative bg-section'>
             <img src="/images/avatar.jpg" alt="" className='w-full h-full object-cover opacity-20 absolute ' />
             <div className="absolute absolute-center text-center flex flex-col justify-center">
                 <div className="w-[150px] h-[150px] margin-center relative fade-in duration-500">
@@ -40,7 +41,7 @@ export default function HomePage() {
                     <img src="/images/avatar.jpg" alt="" className='w-[140px] h-[140px] rounded-full absolute top-[5px] left-[5px]' />
                 </div>
                 <TextTyping />
-                <span className='text-[#d4d4d8] text-lg fade-in duration-500 mb-7'>
+                <span className=' text-lg fade-in duration-500 mb-7'>
                     I am a frontend web developer. I enjoy coding and the challenge of learning something new
                     everyday. My
                     current goal is to pursue a career in front-end development.
