@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { FacbookIcon, GithubIcon, InstagramIcon, LinkedinIcon } from '../components/icons'
 import TextTyping from '../components/TextTyping'
 import bg from '../assets/images/herosection-bg.png'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import { useDarkMode } from '../hooks'
+import DarkModeIcon from '../components/DarkModeIcon'
 export default function HomePage() {
     const socialList = [
         {
@@ -33,9 +35,11 @@ export default function HomePage() {
             }, 300 + i * 600)
         }
     }, [])
+
     return (
-        <div className='w-screen h-screen  relative bg-section overflow-hidden' style={{ backgroundImage: `url(${bg})` }}>
+        <div className='w-screen h-screen  relative bg-section overflow-hidden dark:bg-section-dark dark:text-text-darkMode bg-opacity-80 transition duration-500' style={{ backgroundImage: `url(${bg})` }}>
             {/* <img src="/images/avatar.jpg" alt="" className='w-full h-full object-cover opacity-20 absolute ' /> */}
+            <DarkModeIcon />
             <div className="md:w-[60%] absolute absolute-center text-center flex flex-col justify-center w-full px-4">
                 <div className="w-[150px] h-[150px] margin-center relative fade-in duration-500">
                     <div className=" w-full  h-full rounded-full bg-red-400 relative bg-gradient-to-t from-primary to-black animate-rotate"></div>
@@ -50,12 +54,12 @@ export default function HomePage() {
                 <ul className="inline-flex flex-wrap gap-4 margin-center transition-all duration-500 fade-in">
                     {socialList.map((item) => (
                         <li
-                            className="social-item group align-middle w-10 h-10 inline-block border border-blur cursor-pointer relative overflow-hidden rounded border-black"
+                            className="social-item group align-middle w-10 h-10 inline-block border border-blur cursor-pointer relative overflow-hidden rounded border-black dark:border-text-darkMode"
                             key={item.id}
                         >
                             <a href={item.href} target="blank">
                                 <span
-                                    className="text-lg w-full h-full flex items-center justify-center rounded group-hover:-translate-y-full transition-all duration-500"
+                                    className="text-lg w-full h-full flex items-center justify-center rounded group-hover:-translate-y-full transition-all "
                                 >
                                     {item.icon}
                                 </span>

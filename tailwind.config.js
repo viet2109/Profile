@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -9,7 +10,9 @@ module.exports = {
         'side-bar': 'rgb(7 14 31)',
         'primary': '#29a587',
         'bg': 'rgb(1 14 34)',
-        'section': '#f0ebe3'
+        'section': '#f0ebe3',
+        'section-dark': '#0f172a',
+        'text-darkMode': '#fff'
       },
       backgroundImage: {
         'bg1': "url('/images/avatar.jpg')",

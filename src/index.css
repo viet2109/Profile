@@ -15,7 +15,8 @@ body {
 :root {
     --primary-color: #29a587;
     --bg-color: #f0ebe3;
-    --black: rgb(0, 0, 0)
+    --black: rgb(0, 0, 0);
+    --bg-section-dark: #0f172a;
 }
 
 @layer utilities {
@@ -43,6 +44,62 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .check {
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 20px;
+        /* @apply bg-section-dark; */
+        cursor: pointer;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: ease-in 0.5s;
+    }
+
+    .check::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        background-color: var(--primary-color);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    .check::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 3px;
+        background-color: var(--primary-color);
+        width: 16px;
+        height: 16px;
+        transition: 0.5s;
+        border-radius: 50%;
+        transform: translateX(50px);
+
+    }
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+input[type="checkbox"]:checked~.check {
+    /* @apply bg-section; */
+}
+
+input[type="checkbox"]:checked~.check::before {
+    transform: translateX(-50px);
+}
+
+input[type="checkbox"]:checked~.check::after {
+    transform: translateX(0px);
 }
 
 ::-moz-selection {

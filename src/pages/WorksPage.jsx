@@ -16,17 +16,17 @@ export default function WorksPage() {
     ]
     return (
         <Content title='my works' titleBg='works'>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-20">
+            <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-10 md:p-10 pb-20">
                 {
                     projects.map(e => (
-                        <div className="rounded-md flex flex-col bg-white p-5 group" key={e.id} >
-                            <div className="relative overflow-hidden group">
+                        <div className="rounded-md flex flex-col bg-white p-5 group dark:bg-gray-800" key={e.id} >
+                            <div className="relative overflow-hidden group transition duration-500">
                                 <video src={e.video} muted autoPlay loop className='px-4 ' />
-                                <div className="absolute w-full h-full bg-bg bg-opacity-50  flex justify-center items-center z-[99999] -left-full slide top-0 transition delay-500 group-hover:left-0">
-                                    <a className="w-10 h-10 rounded-full bg-primary text-bg flex justify-center items-center mr-4" href={e.demo}>
+                                <div className="absolute w-full h-full bg-bg bg-opacity-50  flex justify-center items-center z-[99999] -left-full slide top-0 transition duration-500 group-hover:translate-x-full">
+                                    <a className="w-10 h-10 rounded-full bg-primary text-bg flex justify-center items-center dark:text-section mr-4" href={e.demo}>
                                         <ImgIcon />
                                     </a>
-                                    <a className="w-10 h-10 rounded-full bg-primary text-bg flex justify-center items-center " href={e.repo}>
+                                    <a className="w-10 h-10 rounded-full bg-primary text-bg flex justify-center items-center dark:text-section " href={e.repo}>
                                         <LinkIcon />
                                     </a>
                                 </div>
@@ -38,7 +38,7 @@ export default function WorksPage() {
                 }
 
             </div >
-            <a className='uppercase px-5 text-sm font-medium rounded transition opacity-80 hover:opacity-100 py-3 bg-primary text-bg   absolute bottom-2 left-1/2 -translate-x-1/2' href='https://github.com/Duyvu2610'>see all</a>
+            <a className='uppercase px-5 text-sm font-medium rounded transition bg-opacity-80 hover:opacity-100 py-3 bg-primary text-bg   absolute  left-1/2 -translate-x-1/2 dark:text-section' href='https://github.com/Duyvu2610'>see all</a>
         </Content >
     )
 }

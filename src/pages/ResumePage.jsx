@@ -80,25 +80,23 @@ export default function ResumePage() {
                         ))
                     }
                 </div>
-            </Content>
-            <Content title='my resume' titleBg='resume'>
+                <Title title="my resume" bg="resume" className="mt-10" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7 relative px-10 h-auto py-10">
                     <div className=" col-span-1">
                         <h4 className="title flex items-center text-primary text-xl font-semibold mb-3">
                             <BookIcon />
-                            <span className="ml-2 text-black">Educational Qualification</span>
+                            <span className="ml-2 text-black dark:text-section">Educational Qualification</span>
                         </h4>
                         <Timeline timeLineList={educationTimeline} />
                     </div>
                     <div className="col-span-1">
                         <h4 className="title flex items-center text-primary text-xl font-semibold mb-3">
                             <BagIcon />
-                            <span className="ml-2 text-black">Working Experience</span>
+                            <span className="ml-2 text-black dark:text-section">Working Experience</span>
                         </h4>
                         <Timeline timeLineList={workingTimeline} />
                     </div>
                 </div>
-
             </Content>
         </div>
     )
