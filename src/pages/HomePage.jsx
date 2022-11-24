@@ -39,7 +39,7 @@ export default function HomePage() {
     return (
         <div className='w-screen h-screen  relative bg-section overflow-hidden dark:bg-section-dark dark:text-text-darkMode bg-opacity-80 transition duration-500' style={{ backgroundImage: `url(${bg})` }}>
             {/* <img src="/images/avatar.jpg" alt="" className='w-full h-full object-cover opacity-20 absolute ' /> */}
-            <DarkModeIcon />
+            <div className="md:top-3 md:right-20 relative w-full h-full"><DarkModeIcon /></div>
             <div className="md:w-[60%] absolute absolute-center text-center flex flex-col justify-center w-full px-4">
                 <div className="w-[150px] h-[150px] margin-center relative fade-in duration-500">
                     <div className=" w-full  h-full rounded-full bg-red-400 relative bg-gradient-to-t from-primary to-black animate-rotate"></div>
