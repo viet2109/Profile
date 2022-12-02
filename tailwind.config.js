@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'side-bar': 'rgb(7 14 31)',
-        'primary': '#29a587',
+        'primary': '#72e2ae',
         'bg': 'rgb(1 14 34)',
         'section': '#f0ebe3',
         'section-dark': '#0f172a',

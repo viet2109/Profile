@@ -22,10 +22,10 @@ const Form = () => {
         <div className='w-full rounded-lg px-4 py-6 bg-white bg-opacity-5 '>
             {
                 forms.map((e, i) => (
-                    <>
+                    <div key={i}>
                         <div className="">{e.title}</div>
                         <input type={e.type} className='p-3 my-2 bg-transparent border-[2px] border-black rounded-md mb-4 focus:border-primary text-[rgb(156 163 175)] transition duration-150 outline-none w-full dark:border-section dark:border' placeholder={e.placeholder} />
-                    </>
+                    </div>
                 ))
             }
 
