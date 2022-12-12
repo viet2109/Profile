@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Title({ title, className, bg }) {
+const Title = ({ title, className, bg }) => {
     return (
         <div className={`${className} flex justify-center items-center relative `}>
             <p className='uppercase text-8xl md:text-9xl opacity-10 font-bold select-none'>{bg}</p>
@@ -13,3 +13,4 @@ export default function Title({ title, className, bg }) {
         </div>
     )
 }
+export default Title

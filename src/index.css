@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
+}
+
+body {
+
     font-family: 'Jost', sans-serif;
     color: black;
     overflow-x: hidden;
@@ -13,7 +17,7 @@ body {
 }
 
 :root {
-    --primary-color: #29a587;
+    --primary-color: #72e2ae;
     --bg-color: #f0ebe3;
     --black: rgb(0, 0, 0);
     --bg-section-dark: #0f172a;
@@ -82,6 +86,82 @@ body {
         transform: translateX(50px);
 
     }
+
+    .header-list {
+        counter-reset: section;
+    }
+
+    .header-list a::before {
+        counter-increment: section;
+        content: counter(section, decimal-leading-zero) ".";
+        padding-right: 0.25rem;
+    }
+
+    .btn:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transform-origin: bottom;
+        background-color: white;
+        border-radius: inherit;
+        @apply scale-y-0;
+        @apply transition-transform;
+        @apply duration-500;
+
+    }
+
+    .btn>* {
+        z-index: 10;
+        position: relative;
+    }
+
+    .btn:hover:after {
+        @apply scale-y-100;
+        transform-origin: top;
+    }
+
+    .is-sticky {
+        position: fixed;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+        animation: fadeInDown .75s linear 1s forwards;
+        @apply backdrop-blur bg-opacity-20 backdrop-filter border-b transition duration-500 bg-gray-600
+    }
+
+    @keyframes fadeInDown {
+        to {
+            transform: translateY(100px);
+        }
+    }
+
+    /* .aboutsection-dot1 {
+        animation: slide1 3s linear infinite;
+    }
+
+    @keyframes slide1 {
+        to {
+            transform: translateX(384px);
+        }
+    }
+
+    .aboutsection-dot2 {
+        animation: slide2 1.5s linear infinite;
+    }
+
+    @keyframes slide2 {
+        to {
+            transform: translateY(384px);
+        }
+    } */
+
+
 }
 
 input[type="checkbox"] {
