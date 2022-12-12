@@ -1,7 +1,5 @@
 import React from 'react'
 import { useEffect } from 'react'
-import Header from '../components/Header'
-import Sidebar from '../components/Sidebar/Sidebar'
 import AboutPage from '../pages/AboutPage'
 import Contact from '../pages/Contact'
 import HomePage from '../pages/HomePage'
