@@ -1,6 +1,8 @@
 import React from 'react'
 import Content from '../components/Content'
 import { BagIcon, BookIcon, CssIcon, GitIcon, HtmlIcon, ReactJsIcon, ReduxIcon, SassIcon, TailWindIcon, TypeScriptIcon } from '../components/icons'
+import { TbBrandJavascript } from 'react-icons/tb'
+import { SiJava } from 'react-icons/si'
 import Timeline from '../components/Timeline'
 import Title from '../components/Title'
 
@@ -15,8 +17,8 @@ export default function ResumePage() {
             "icon": <CssIcon />
         },
         {
-            "name": "TypeScript",
-            "icon": <TypeScriptIcon />
+            "name": "JavaScript",
+            "icon": <TbBrandJavascript />
         },
         {
             "name": "SASS",
@@ -35,17 +37,17 @@ export default function ResumePage() {
             "icon": <ReduxIcon />
         },
         {
-            "name": "Git",
-            "icon": <GitIcon />
+            "name": "Java",
+            "icon": <SiJava />
         },
     ]
     const educationTimeline = [
         {
             id: 1,
             time: '2021 - current',
-            title: 'College graduation',
+            title: 'Studying at',
             subTitle: 'Nong Lam University.',
-            desc: `<ul class='list-disc'><li>Basic knowledge of programming, algorithms, computers.</li><li>System Analysis and Design.</li/><li>Building a programming mindset.</li><li>Get familiar with the database.</li></ul>`,
+            desc: `<ul class='list-disc'><li>Basic knowledge of programming, algorithms, computers.</li><li>Building a programming mindset.</li><li>OOP Java.</li/><li>Data structures and algorithms basic.</li></ul>`,
         },
 
     ]
@@ -54,19 +56,13 @@ export default function ResumePage() {
             id: 1,
             time: '2020 - Current',
             title: 'Self learning',
-            subTitle: 'Udemy, FreeCodeCamp, F8',
+            subTitle: 'W3Schools, F8',
             desc: `<ul class='list-disc'><li>Learn about ReactJS, TailwindCSS.</li><li>Apply the knowledge learned to build a few personal projects.</li><li>Improve language skills.</li></ul>`,
         },
-        {
-            id: 2,
-            time: '2020 - Current',
-            title: 'Self learning',
-            subTitle: 'Udemy, FreeCodeCamp, F8',
-            desc: `<ul class='list-disc'><li>Learn about ReactJS, TailwindCSS.</li><li>Apply the knowledge learned to build a few personal projects.</li><li>Improve language skills.</li></ul>`,
-        },
+
     ]
     return (
-        <div className=''>
+        <div className='' id='resume'>
             <Content title='my skills' titleBg='skills'>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-10 pt-10">
                     {

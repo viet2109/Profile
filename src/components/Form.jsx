@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Form = () => {
     const forms = [
@@ -31,7 +32,7 @@ const Form = () => {
 
             <div className="">Message</div>
             <textarea type="text" className='p-3 my-2 bg-transparent border-[2px] border-black rounded-md mb-4 focus:border-primary text-[rgb(156 163 175)] transition duration-150 outline-none w-full dark:border-section resize-none dark:border' placeholder='Enter your message...' cols={1} rows={5} autoComplete='off' />
-            <button className='uppercase px-4 py-3 rounded-md font-semibold text-sm tracking-wide  bg-primary mt-2 bg-opacity-80 hover:bg-opacity-100 duration-300 inline-block text-black dark:text-white'>Send email</button>
+            <Button>Send email</Button>
 
         </div>
     )

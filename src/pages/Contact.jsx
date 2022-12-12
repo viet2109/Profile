@@ -28,7 +28,7 @@ function Contact() {
         },
     ]
     return (
-        <Content title='contact us' titleBg='contact'>
+        <Content title='contact us' titleBg='contact' id='contact'>
             <div className="p-4 flex gap-10 flex-wrap">
                 <div className="w-[40%]  pt-20 flex-1">
                     <h4 className='mb-4 font-extrabold text-xl'>Contact Information</h4>
