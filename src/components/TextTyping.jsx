@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 export default function TextTyping() {
-    const textArray = ["Nguyen Duy Vu", "Front End Developer", "Software Engineer"]
+    const textArray = ["Nguyen Hoang Viet", "Front End Developer", "Software Engineer"]
     useEffect(() => {
         const typeText = document.querySelector('.typetext')
         let index = 0,

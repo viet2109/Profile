@@ -16,19 +16,15 @@ export default function HomePage() {
         {
             id: 1,
             icon: <FacbookIcon />,
-            href: 'https://www.facebook.com/duyvu.2610',
+            href: 'https://www.facebook.com/profile.php?id=100025683498231',
         },
         {
             id: 2,
             icon: <InstagramIcon />,
-            href: 'https://www.instagram.com/ndvuuujjj/',
+            href: 'https://www.instagram.com/aoaneft/',
         },
-        { id: 3, icon: <GithubIcon />, href: 'https://github.com/Duyvu2610' },
-        {
-            id: 4,
-            icon: <LinkedinIcon />,
-            href: 'https://www.linkedin.com/in/vụ-nguyễn-duy-737888256/',
-        },
+        { id: 3, icon: <GithubIcon />, href: 'https://github.com/viet2109' },
+        
     ]
     useEffect(() => {
         const fadeIn = document.querySelectorAll(
@@ -56,7 +52,7 @@ export default function HomePage() {
             <div className="md:w-[60%] absolute absolute-center text-center flex flex-col justify-center w-full px-4 text-gray-300">
                 <div className="w-[150px] h-[150px] margin-center relative fade-in duration-500">
                     <div className=" w-full  h-full rounded-full bg-red-400 relative bg-gradient-to-t from-primary to-black animate-rotate"></div>
-                    <img src="/images/avatar.jpg" alt="" className='w-[140px] h-[140px] rounded-full absolute top-[5px] left-[5px]' />
+                    <img src="/images/avatar.jpg" alt="" className='w-[140px] h-[140px] rounded-full absolute top-[5px] left-[5px] object-cover' />
                 </div>
                 <TextTyping />
                 <span className=' text-lg fade-in duration-500 mb-7'>

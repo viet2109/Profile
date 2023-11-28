@@ -11,8 +11,8 @@ export default function WorksPage() {
             video: "/videos/tiktok.mp4",
             name: "-Tiktok-",
             desc: "First project code by Reactjs",
-            demo: "https://duyvu-toptop.vercel.app/",
-            repo: "https://github.com/Duyvu2610/toptop",
+            demo: "http://tiktok-pi.vercel.app/",
+            repo: "https://github.com/viet2109/tiktok",
             skills: [<DiReact size={30} color="#52b0c9" key={1} />, <SiTailwindcss size={30} color="#52b0c9" key={2} />],
             achievements: `<ul class='list-disc'><li>Know how to use a react hooks</li><li>Using API first time</li><li>Using a few library: Tippy.js/react, React Router</li/><li>Know about intersection observer</li></ul>`
         },
@@ -49,7 +49,7 @@ export default function WorksPage() {
                     ))
                 }
             </div >
-            <Button href='https://github.com/Duyvu2610' className='inline-block left-1/2 -translate-x-1/2'>See all</Button>
+            <Button href='https://github.com/viet2109' className='inline-block left-1/2 -translate-x-1/2'>See all</Button>
         </Content >
     )
 }

@@ -47,7 +47,7 @@ export default function Sidebar() {
                 <div className=' w-20 h-full md:flex flex-col justify-around items-center border-r hidden'>
                     <div className="h-[40%]">
                         <div className="w-[60px] h-[60px] rounded-full bg-primary relative " onClick={handleClickAvatar}>
-                            <img src="/images/avatar.jpg" alt="" className='w-[54px] h-[54px] rounded-full absolute top-[3px] left-[3px]' />
+                            <img src="/images/avatar.jpg" alt="" className='w-[54px] h-[54px] object-cover rounded-full absolute top-[3px] left-[3px]' />
                         </div>
                     </div>
                     <div className="" onClick={handleClickMenu}>

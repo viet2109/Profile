@@ -12,13 +12,13 @@ function Contact() {
             id: 1,
             icon: <BsTelephone />,
             title: "Contact on phone",
-            desc: "+84 32 902 8367"
+            desc: "+84 39 300 3394"
         },
         {
             id: 2,
             icon: <AiOutlineMail />,
             title: "Contact on mail",
-            desc: "duyvu2612003@gmail.com"
+            desc: "nguyenhoangviet210903@gmail.com"
         },
         {
             id: 3,

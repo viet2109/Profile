@@ -33,7 +33,7 @@ function Header() {
         <>
             {/* header */}
             <div className="header-section w-full flex justify-between px-4 items-center dark:text-primary py-2 " ref={header}>
-                <p className='uppercase text-4xl font-bold'>duyvu</p>
+                <p className='uppercase text-4xl font-bold'>hoangviet</p>
                 <ul className=' gap-7 hidden lg:inline-flex header-list text-white'>
                     {
                         listMenu.map(e => (

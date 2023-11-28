@@ -11,15 +11,15 @@ export default function AboutPage() {
     const info = [
         {
             title: "First Name",
-            data: "Vu"
+            data: "Viet"
         },
         {
             title: "Last Name",
-            data: "Nguyen"
+            data: "Nguyen Hoang"
         },
         {
             title: "Age",
-            data: "19"
+            data: "20"
         },
         {
             title: "Nationality",
@@ -69,7 +69,7 @@ export default function AboutPage() {
 
                     </div>
                     <div className="md:flex-1 md:ml-10 pt-4 ">
-                        <h2 className='font-bold text-2xl'>Hi, I am<span className='text-primary ml-2'>Vu Nguyen</span></h2>
+                        <h2 className='font-bold text-2xl'>Hi, I am<span className='text-primary ml-2'>Viet Nguyen</span></h2>
                         <ul className='pl-5 text-lg font-semibold text-gray-500 my-2'>
                             {
                                 info.map((e, i) => (
@@ -82,7 +82,7 @@ export default function AboutPage() {
                             }
 
                         </ul>
-                        <Button href={resume} className='inline-block' download="DuyVu-Resume">Download resume</Button>
+                        <Button href={resume} className='inline-block' download="HoangViet-Resume">Download resume</Button>
                     </div>
                 </div>
             </Content>
